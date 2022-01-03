@@ -1,0 +1,18 @@
+.commanditaires {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.commanditaires img {
+  max-width: 200px;
+}
+
+
+@media screen and (max-width: $vw-middle-small) {
+
+  .commanditaires {
+    justify-content: center;
+  }
+
+}

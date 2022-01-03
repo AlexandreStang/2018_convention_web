@@ -1,0 +1,173 @@
+footer {
+  color: $white;
+  background-color: $dark-grey;
+
+  padding: 100px 0;
+}
+
+footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+  color: $white;
+}
+
+footer > .wrapper > div {
+  margin-bottom: 96px;
+}
+
+footer > .wrapper > div:last-of-type {
+  margin-bottom: 0;
+}
+
+// SECTION DES RÉSEAUX SOCIAUX
+
+footer .footer-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  text-align: right;
+}
+
+footer .footer-social h4 {
+  margin: 0;
+}
+
+footer form:after {
+  width: 200px;
+  height: 3px;
+  border-radius: 100px;
+  background-color: $white;
+  opacity: 0.35;
+  content: "";
+  display: block;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+footer form input {
+  width: 80%;
+  max-width: 416px;
+}
+
+footer .footer-social .footer-social-networks a {
+  font-size: rem(36);
+
+  color: $white;
+
+  margin-left: 36px;
+
+  transition: $global-transition;
+}
+
+footer .footer-social .footer-social-networks a:hover {
+  color: $green;
+
+  transition: $global-transition;
+}
+
+// SECTION DES BADGES
+
+footer .footer-badges {
+  display: flex;
+  justify-content: center;
+}
+
+footer .badge {
+  height: 48px;
+  margin: 4px;
+}
+
+// SECTION DES COPYRIGHTS
+
+.footer-copyrights {
+  text-align: center;
+}
+
+.footer-copyrights span {
+  text-decoration: underline;
+}
+
+.footer-copyrights div:last-of-type {
+  font-size: rem(12);
+}
+
+.button-newsletter {
+  border: 0;
+  background: none;
+
+  top: 4px;
+  right: 1px;
+  
+  font-size: rem(40);
+  color: $green;
+
+  transition: $global-transition;
+}
+
+.button-newsletter:hover {
+  transform: scale(0.95);
+
+  opacity: 0.4;
+
+  transition: $global-transition;
+}
+
+.button-newsletter:focus {
+  outline:none;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: $vw-middle) {
+
+  footer .footer-social {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+  }
+
+  footer .footer-social > div:last-of-type {
+    margin-top: 100px;
+  }
+
+  footer form:after {
+    margin-right: auto;
+  }
+
+  .button-newsletter {
+    right: 60px;
+  }
+}
+
+@media screen and (max-width: $vw-middle-small) {
+
+  footer form input {
+    width: 100%;
+  }
+  .button-newsletter {
+    right: 18px;
+  }
+
+  footer .footer-badges {
+    flex-direction: column;
+    align-items: center;
+
+    margin: 50px 0;
+  }
+
+}
+
+@media screen and (max-width: $vw-small) {
+
+  .button-newsletter {
+    right: 0px;
+  }
+
+}

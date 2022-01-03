@@ -1,0 +1,127 @@
+.ticket-section {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+// TOUS LES TICKETS
+
+.ticket {
+  min-width: 370px;
+  min-height: 480px;
+  border-radius: 32px;
+
+  text-align: center;
+
+  background-color: $white;
+
+  -webkit-box-shadow: 0px 8px 24px -2px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 8px 24px -2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 8px 24px -2px rgba(0, 0, 0, 0.25);
+
+  position: relative;
+}
+
+.ticket-titre {
+  font-family: $title;
+  font-size: rem(24);
+  font-weight: $fw-black;
+  text-transform: uppercase;
+
+  display: block;
+
+  margin: 48px 0 16px 0;
+}
+
+.ticket-prix {
+  font-family: $title;
+  font-size: rem(60);
+  font-weight: $fw-black;
+
+  color: $green;
+
+  display: block;
+
+  margin-bottom: 24px;
+}
+
+.ticket p:after {
+  width: 170px;
+  height: 1px;
+  background-color: $dark-grey;
+  opacity: 0.35;
+  content: "";
+  display: block;
+  margin: 20px auto;
+}
+
+.ticket-bottom {
+  position: absolute;
+  margin-bottom: 48px;
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+
+  transform: translate(-50%);
+  bottom: 0;
+
+  width: 100%;
+}
+
+.ticket-bottom .disclaimer {
+  font-style: italic;
+  opacity: 0.5;
+}
+
+.ticket-bottom .btn {
+  margin-top: 44px;
+  margin-right: auto;
+  margin-left: auto;
+
+  max-width: 200px;
+  display: block;
+}
+
+// TICKET SPÉCIAL UNIQUEMENT
+
+.ticket-special {
+  width: 400px;
+  height: 560px;
+
+  color: $white;
+
+  background: #00b7e0; /* Old browsers */
+  background: -moz-linear-gradient(45deg, #00b7e0 23%, #40e0d0 96%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #00b7e0 23%, #40e0d0 96%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #00b7e0 23%, #40e0d0 96%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00b7e0', endColorstr='#40e0d0', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+}
+
+.ticket-special .ticket-titre {
+  font-size: rem(30);
+}
+
+.ticket-special .ticket-prix {
+  font-size: rem(72);
+
+  color: $yellow;
+}
+
+.ticket-special p:after {
+  background-color: $white
+}
+
+.ticket-special .ticket-bottom .disclaimer {
+  opacity: 1;
+}
+
+@media screen and (max-width: $vw-middle) {
+
+  .ticket-special {
+    margin: 20px 0;
+  }
+
+  .ticket-section {
+    flex-direction: column;
+  }
+}

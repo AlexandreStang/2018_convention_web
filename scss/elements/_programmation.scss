@@ -1,0 +1,96 @@
+// DATES
+
+.page {
+  margin-top: 80px;
+}
+
+.programmation .programmation-dates {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  text-align: center;
+
+  margin-bottom: 24px;
+}
+
+.programmation .programmation-dates div {
+  padding: 12px 48px;
+  margin: 0 48px;
+
+  min-width: 28.9855%;
+
+  border-radius: 100px;
+
+  cursor: pointer;
+
+  transition: $global-transition;
+}
+
+.programmation .programmation-dates div[class="jourChoisi"] {
+  background-color: $grey;
+}
+
+.programmation .programmation-dates .jourTitre {
+  font-family: $title;
+  font-weight: $fw-black;
+  text-transform: uppercase;
+}
+
+.programmation .programmation-dates p {
+  margin: 8px 0 0 0;
+}
+
+// HORAIRE DE LA JOURNÉE
+
+.programmation .programmation-infos > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 24px 0;
+  border-bottom: 1px solid $grey;
+}
+
+.programmation .programmation-infos span + div {
+  margin-top: 8px;
+}
+
+.programmation .programmation-infos .programmation-invite {
+  font-weight: $fw-bold;
+}
+
+
+
+
+
+@media screen and (max-width: $vw-middle) {
+
+  .programmation .programmation-dates div {
+    margin: 0 0;
+  }
+
+  .programmation .programmation-infos > div {
+    flex-direction: column;
+    justify-content: space-between;
+
+    text-align: center;
+
+    padding: 30px 0;
+
+    height: 260px;
+  }
+
+}
+
+@media screen and (max-width: $vw-small) {
+
+  .page {
+    margin-top: 40px;
+  }
+
+  .programmation .programmation-dates {
+    flex-direction: column;
+  }
+
+}

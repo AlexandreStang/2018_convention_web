@@ -1,0 +1,129 @@
+.banner {
+  color: $white;
+
+  height: calc(100vh - 90px);
+  position:relative;
+}
+
+.banner:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+
+  position: absolute;
+  top: 0;
+  left:0;
+
+  background: url('img/banner.jpg');
+  background-size: cover;
+  opacity: .3;
+  z-index: 1;
+}
+
+.banner h1, .banner h2, .banner h3, .banner h4, .banner h5, .banner h6 {
+  color: $white;
+}
+
+.banner h1, .banner h5 {
+  margin-bottom: 16px;
+}
+
+.banner .banner-description {
+  max-width: 1015px;
+
+  margin-bottom: 56px;
+}
+
+.banner a {
+  margin-bottom: 128px;
+}
+
+.banner .banner-content {
+  height: calc(100vh - 90px);
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  z-index:2;
+}
+
+.banner .banner-chrono {
+  display: flex;
+
+  text-align: center;
+}
+
+.banner .banner-chrono > div {
+  margin-right: 48px;
+}
+
+.banner .banner-chrono > div > div:first-child {
+  font-size: rem(96);
+  font-family: $title;
+  font-weight: $black;
+  color: $yellow;
+}
+
+.banner .banner-chrono > div > div:last-child {
+  font-size: rem(20);
+}
+
+
+.titre-social div:last-of-type {
+  display: none;
+}
+
+.img-social a {
+  display: block;
+}
+
+.img-social a {
+  margin: 0 9px;
+}
+
+//.fiche-invites-liste-content div {
+//  width: 21.7391%;
+//  max-width: 150px;
+//}
+
+@media screen and (max-width: $vw-middle) {
+
+  .banner {
+    text-align: center;
+  }
+
+
+
+  .banner .banner-chrono {
+    display: flex;
+    justify-content: center;
+  }
+
+  .banner .banner-chrono > div {
+    margin: 24px;
+  }
+
+}
+
+@media screen and (max-width: $vw-middle-small) {
+
+.banner-description p {
+  display: none;
+}
+
+  .banner .btn {
+    background: #ffffff | transparent;
+  }
+
+
+
+
+}
+
+@media screen and (max-width: $vw-small) {
+
+
+
+}
