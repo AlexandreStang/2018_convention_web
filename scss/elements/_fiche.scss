@@ -5,8 +5,8 @@
 }
 
 .fiche .fiche-content .fiche-img {
-  width: 415px;
-  height: 415px;
+  max-width: 415px;
+  max-height: 415px;
 }
 
 .fiche .fiche-content .fiche-texte {
@@ -14,7 +14,7 @@
 }
 
 .fiche .fiche-content .fiche-texte {
-  margin-left: 30px;
+  margin-left: 50px;
 }
 
 .fiche .fiche-content .fiche-texte .fiche-titre {
@@ -28,6 +28,11 @@
 
 .fiche .fiche-content .fiche-texte p {
   margin-bottom: 32px;
+}
+
+.fiche .fiche-content .fiche-texte .fiche-event div {
+  
+  margin: 10px 0;
 }
 
 .fiche .fiche-content .fiche-texte .fiche-event div:first-child {
