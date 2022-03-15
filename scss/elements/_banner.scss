@@ -30,10 +30,14 @@
 }
 
 .banner .banner-description {
-  max-width: 800px;
+ margin-bottom: 56px;
 
-  margin-bottom: 56px;
+  p {
+    max-width: 800px;
+  }
+
 }
+
 
 .banner a {
   margin-bottom: 128px;
@@ -109,8 +113,17 @@
 
 @media screen and (max-width: $vw-middle-small) {
 
-.banner-description p {
-  display: none;
+.banner .banner-content {
+  display: block;
+  width: 100%;
+  padding-top: 80px;
+}
+
+
+
+.banner-description  {
+
+  p { display: none; }
 }
 
   .banner .btn {
@@ -123,7 +136,6 @@
 }
 
 @media screen and (max-width: $vw-small) {
-
 
 
 }
