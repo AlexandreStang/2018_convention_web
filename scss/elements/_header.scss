@@ -129,7 +129,6 @@ input[id="show-menu"]:checked ~ ul {
 }
 
 
-
 @media screen and (max-width: $vw-middle) {
 
   header .menu ul {
@@ -153,7 +152,9 @@ input[id="show-menu"]:checked ~ ul {
 
 @media screen and (max-width: $vw-middle-small) {
 
-
+.btn-billet {
+  display: none;
+}
 
 }
 
