@@ -35,3 +35,19 @@ div[class="specialBackground"] h3:after {
   display: block;
   margin: 32px 0;
 }
+
+@media screen and (max-width: $vw-middle) {
+
+  article, .banner {
+    margin-bottom: 40px;
+  }
+
+  div[class="specialBackground"] {
+    padding: 40px 0;
+  }
+
+  article:last-of-type {
+    padding: 40px 0;
+  }
+
+}

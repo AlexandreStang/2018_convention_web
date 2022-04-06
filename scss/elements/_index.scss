@@ -291,6 +291,7 @@
 
 }
 
+
 @media screen and (max-width: $vw-middle-small) {
 
   .bref-icons {
@@ -300,7 +301,7 @@
 
   .bref-icons > div {
     width: 100%;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
   }
 
   .apprendre .invites-sample-content {

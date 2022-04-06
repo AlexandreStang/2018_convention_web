@@ -124,4 +124,17 @@
   .ticket-section {
     flex-direction: column;
   }
+
 }
+
+@media screen and (max-width: $vw-middle-small) {
+
+  .ticket {
+    width: 100%;
+    min-width: 0;
+  }
+
+}
+
+
+
