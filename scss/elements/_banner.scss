@@ -98,11 +98,8 @@
     text-align: center;
   }
 
-
-
   .banner .banner-chrono {
-    display: flex;
-    justify-content: center;
+    display: none;
   }
 
   .banner .banner-chrono > div {
@@ -127,13 +124,11 @@
 }
 
   .banner .btn {
-    background: #ffffff | transparent;
+    background: #ffffff, transparent;
   }
 
-
-
-
 }
+
 
 @media screen and (max-width: $vw-small) {
 
