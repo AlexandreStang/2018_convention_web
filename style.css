@@ -521,7 +521,7 @@ h4, h5, h6 {
     max-width: 800px; }
 
 .banner a {
-  margin-bottom: 128px; }
+  margin-bottom: 5%; }
 
 .banner .banner-content {
   height: calc(100vh - 90px);
