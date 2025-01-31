@@ -1,7 +1,6 @@
 # Wordpress Event Website
 
-> A Wordpress theme made with PHP designed for an event website. The event in question
-> is a convention centered around web design.
+> A custom WordPress theme built with PHP, designed for an event website. The event is a convention focused on web design.
 
 
 ![Home page](/og-image.png)
