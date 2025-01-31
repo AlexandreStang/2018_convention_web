@@ -1,0 +1,1 @@
+[22-May-2018 19:30:49 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/e1561490/public_html/cours/cw4/tp03/wp-content/themes/conventionweb/index.php on line 1
