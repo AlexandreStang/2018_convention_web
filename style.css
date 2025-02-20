@@ -729,7 +729,6 @@ h4, h5, h6 {
 .invites .invites-liste > div {
   width: 22.5%;
   max-width: 270px;
-  height: 335px;
   margin-bottom: 32px;
   position: relative;
 }
@@ -754,14 +753,13 @@ h4, h5, h6 {
   .invites .invites-liste > div {
     width: 46.6666%;
     max-width: 335px;
-    margin-bottom: 118px;
+    margin-bottom: 10%;
   }
 }
 @media screen and (max-width: 500px) {
   .invites .invites-liste > div {
     width: 100%;
     max-width: 100%;
-    margin-bottom: 224px;
     height: auto;
   }
 }
