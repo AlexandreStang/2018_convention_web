@@ -55,12 +55,17 @@ footer form input {
   max-width: 416px;
 }
 
+footer .footer-social .footer-social-networks {
+  display: flex;
+  justify-content: end;
+  gap: 36px;
+}
+
 footer .footer-social .footer-social-networks a {
+
   font-size: fonctions.rem(36);
 
   color: colors.$white;
-
-  margin-left: 36px;
 
   transition: global.$global-transition;
 }
@@ -148,6 +153,12 @@ footer .badge {
 
   .button-newsletter {
     right: 60px;
+  }
+
+  footer .footer-social .footer-social-networks {
+    display: flex;
+    justify-content: center;
+    gap: 36px;
   }
 }
 

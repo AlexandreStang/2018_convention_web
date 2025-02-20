@@ -1285,10 +1285,15 @@ footer form input {
   max-width: 416px;
 }
 
+footer .footer-social .footer-social-networks {
+  display: flex;
+  justify-content: end;
+  gap: 36px;
+}
+
 footer .footer-social .footer-social-networks a {
   font-size: 2.25rem;
   color: #fff;
-  margin-left: 36px;
   transition: all 300ms ease-in-out;
 }
 
@@ -1354,6 +1359,11 @@ footer .badge {
   }
   .button-newsletter {
     right: 60px;
+  }
+  footer .footer-social .footer-social-networks {
+    display: flex;
+    justify-content: center;
+    gap: 36px;
   }
 }
 @media screen and (max-width: 500px) {
