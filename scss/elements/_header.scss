@@ -31,7 +31,7 @@ header {
   background: linear-gradient(45deg, #00b7e0 23%, #40e0d0 96%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00b7e0', endColorstr='#40e0d0', GradientType=1); /* IE6-9 fallback on horizontal gradient */
 
-  height: 100%;
+  height: 100vh;
 }
 
 header > div > nav > div > a > .logo, .nav-mobile .logo {
@@ -120,11 +120,11 @@ input[id="show-menu"]:checked ~ ul {
 
   padding: 0;
 
-    margin: 25% 0;
+
 }
 
 .nav-mobile .menu-mobile li {
-  margin: 50px 0;
+  margin: 5% 0;
 }
 
 .nav-mobile .menu-mobile a {

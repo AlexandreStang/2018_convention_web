@@ -586,14 +586,6 @@ h4, h5, h6 {
   display: none;
 }
 
-.img-social a {
-  display: block;
-}
-
-.img-social a {
-  margin: 0 9px;
-}
-
 @media screen and (max-width: 768px) {
   .banner {
     text-align: center;
@@ -765,22 +757,13 @@ h4, h5, h6 {
   }
 }
 .fiche .fiche-content {
-  display: flex;
-  align-items: start;
-}
-
-.fiche .fiche-content .fiche-img {
-  max-width: 415px;
-  max-height: 415px;
-  width: 40%;
+  display: grid;
+  grid-template-columns: 30% auto;
+  gap: 36px;
 }
 
 .fiche .fiche-content .fiche-texte {
   max-width: 750px;
-}
-
-.fiche .fiche-content .fiche-texte {
-  margin-left: 50px;
 }
 
 .fiche .fiche-content .fiche-texte .fiche-titre {
@@ -820,7 +803,6 @@ h4, h5, h6 {
 .titre-social a, .img-social a {
   font-size: 2.25rem;
   color: #40e0d0;
-  margin-left: 18px;
 }
 
 .titre-social a:hover, .img-social a:hover {
@@ -831,7 +813,8 @@ h4, h5, h6 {
 .img-social {
   display: flex;
   justify-content: center;
-  margin-top: 36px;
+  gap: 8px;
+  margin-top: 24px;
 }
 
 .img-social a {
@@ -853,27 +836,14 @@ h4, h5, h6 {
   .fiche .fiche-content {
     align-items: flex-start;
   }
-  .fiche .fiche-content .fiche-img {
-    max-width: 328px;
-    margin-bottom: 75px;
-  }
-  .img-social a {
-    margin: 0 9px;
-  }
 }
 @media screen and (max-width: 500px) {
   .fiche .fiche-content {
-    flex-wrap: wrap;
+    grid-template-columns: 1fr;
   }
   .fiche .fiche-content .fiche-img {
-    width: 100%;
-    max-width: 500px;
-    margin-bottom: 0px;
-  }
-  .fiche .fiche-content .fiche-texte {
-    margin-top: 32px;
-    margin-left: 0;
-    width: 100%;
+    width: 75%;
+    margin: 0 auto;
   }
   .fiche-invites-liste-content {
     grid-template-columns: repeat(2, 1fr);
@@ -1156,7 +1126,7 @@ header {
   background: -webkit-linear-gradient(45deg, #00b7e0 23%, #40e0d0 96%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(45deg, #00b7e0 23%, #40e0d0 96%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00b7e0", endColorstr="#40e0d0", GradientType=1); /* IE6-9 fallback on horizontal gradient */
-  height: 100%;
+  height: 100vh;
 }
 
 header > div > nav > div > a > .logo, .nav-mobile .logo {
@@ -1230,11 +1200,10 @@ header .menu a:hover {
   font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   padding: 0;
-  margin: 25% 0;
 }
 
 .nav-mobile .menu-mobile li {
-  margin: 50px 0;
+  margin: 5% 0;
 }
 
 .nav-mobile .menu-mobile a {

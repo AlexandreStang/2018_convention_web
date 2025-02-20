@@ -5,22 +5,13 @@
 @use "../tools/fonctions";
 
 .fiche .fiche-content {
-  display: flex;
-  align-items: start;
-}
-
-.fiche .fiche-content .fiche-img {
-  max-width: 415px;
-  max-height: 415px;
-  width: 40%;
+  display: grid;
+  grid-template-columns: 30% auto;
+  gap: 36px;
 }
 
 .fiche .fiche-content .fiche-texte {
   max-width: 750px;
-}
-
-.fiche .fiche-content .fiche-texte {
-  margin-left: 50px;
 }
 
 .fiche .fiche-content .fiche-texte .fiche-titre {
@@ -67,7 +58,7 @@
   font-size: fonctions.rem(36);
   color: colors.$green;
 
-  margin-left: 18px;
+
 }
 
 .titre-social a:hover, .img-social a:hover {
@@ -79,8 +70,9 @@
 .img-social {
   display: flex;
   justify-content: center;
+  gap: 8px;
 
-  margin-top: 36px;
+  margin-top: 24px;
 }
 
 .img-social a {
@@ -105,34 +97,17 @@
   .fiche .fiche-content {
     align-items: flex-start;
   }
-
-  .fiche .fiche-content .fiche-img {
-    max-width: 328px;
-    margin-bottom: 75px;
-  }
-
-  .img-social a {
-    margin: 0 9px;
-  }
-
 }
 
 @media screen and (max-width: dimensions.$vw-middle-small) {
 
   .fiche .fiche-content {
-    flex-wrap: wrap;
+    grid-template-columns: 1fr;
   }
 
   .fiche .fiche-content .fiche-img {
-    width: 100%;
-    max-width: 500px;
-    margin-bottom: 0px;
-  }
-
-  .fiche .fiche-content .fiche-texte {
-    margin-top: 32px;
-    margin-left: 0;
-    width: 100%;
+    width: 75%;
+    margin: 0 auto
   }
 
   .fiche-invites-liste-content {
