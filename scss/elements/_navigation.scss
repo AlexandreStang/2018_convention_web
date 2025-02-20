@@ -1,115 +1,118 @@
-
+//@use "../settings/colors";
+//@use "../settings/fonts";
+//@use "../tools/fonctions";
+//
 // /* Show Menu */
-
+//
 // .show-menu {
 //   display: none;
 // }
-
+//
 // .toggle-menu {
 //   display: none;
 // }
-
+//
 // /* Navigation */
-
+//
 // header {
-
+//
 // }
-
+//
 // header > nav > ul {
 //   display: flex;
 // }
-
+//
 // nav ul, nav li {
 //   padding: 0;
 //   margin: 0;
-
+//
 //   list-style: none;
 // }
-
+//
 // header > nav > ul > li > a, header > nav > ul > li > span {
 //   display: block;
-
+//
 //   padding: 18px 50px;
-
+//
 //   text-transform: uppercase;
 //   text-decoration: none;
-
-//   font-size: rem(18);
-//   font-family: $title;
-//   font-weight: $fw-bold;
-//   color: $black;
-
+//
+//   font-size: fonctions.rem(18);
+//   font-family: fonts.$title;
+//   font-weight: fonts.$fw-bold;
+//   color: colors.$black;
+//
 //   cursor: pointer;
 // }
-
+//
 // header > nav > ul > li {
 //   position: relative;
 // }
-
+//
 // /* Survol du niveau 1 du menu */
-
+//
 // header > nav > ul > li:hover, header > nav > ul > li:hover > span {
-//   border-bottom: 5px $black solid;
-
+//   border-bottom: 5px colors.$black solid;
+//
 //   transition: all ease 0.3s;
 // }
-
-
+//
+//
 // /* Apparence du sous-menu */
-
+//
 // header > nav > ul > li > ul {
 //   display: none;
-
+//
 //   margin: 0;
 //   padding: 0;
-
+//
 //   position: absolute;
 //   width: 100%;
 //   top: 99%;
-
+//
 //   z-index: 10;
-
-//   background-color: $white;
+//
+//   background-color: colors.$white;
 // }
-
+//
 // header > nav > ul > li:hover > ul {
 //   display: block;
 // }
-
-
+//
+//
 // /* Survol du niveau 2 du menu */
-
-
+//
+//
 // header > nav > ul > li > ul > li > a {
 //   display: block;
-
-//   font-size: rem(12);
-//   font-family: $title;
-//   font-weight: $fw-regular;
-//   color: $black;
-
+//
+//   font-size: fonctions.rem(12);
+//   font-family: fonts.$title;
+//   font-weight: fonts.$fw-regular;
+//   color: colors.$black;
+//
 //   text-align: center;
 //   text-decoration: none;
-
+//
 //   padding: 12px 0;
 // }
-
+//
 // header > nav > ul > li > ul > li {
 //   transition: all ease 0.2s;
 // }
-
+//
 // header > nav > ul > li > ul > li:hover {
-//   background-color: $grey;
+//   background-color: colors.$grey;
 //   transition: all ease 0.2s;
 // }
-
+//
 // header > nav > ul > li > ul > li > a {
 //   transition: all ease 0.2s;
 // }
-
+//
 // header > nav > ul > li > ul > li:hover > a {
-//   color: $black;
+//   color: colors.$black;
 //   transition: all ease 0.2s;
 // }
-
-
+//
+//

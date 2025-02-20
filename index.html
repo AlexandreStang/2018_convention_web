@@ -12,14 +12,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/slick/slick.min.js"></script>
-    <script src="js/script.js"></script>
-
 </head>
 <body>
 
-<nav class="nav-mobile">
+<nav class="nav-mobile" id="nav-mobile">
     <div class="wrapper">
         <nav>
             <div>
@@ -27,7 +23,7 @@
                                           class="logo"></a>
             </div>
             <div>
-                <a href="#" class="btn btn-white-border">Billeterie</a>
+<!--                <a href="#" class="btn btn-white-border">Billeterie</a>-->
                 <label for="show-menu-2" class="show-menu"><i class="fa fa-bars" aria-hidden="true"></i></label>
                 <input type="checkbox" id="show-menu-2" class="toggle-menu">
             </div>
@@ -35,7 +31,7 @@
         <div class="menu-mobile">
             <div class="menu">
                 <ul>
-                    <li><a href="#">Accueil</a></li>
+                    <li><a href="index.html">Accueil</a></li>
                     <li><a href="programmation.html">Programmation</a></li>
                     <li><a href="#">Conférenciers</a></li>
                     <li><a href="#">Informations</a></li>
@@ -53,7 +49,7 @@
                                           class="logo"></a>
                 <div class="menu">
                     <ul>
-                        <li><a href="#">Accueil</a></li>
+                        <li><a href="index.html">Accueil</a></li>
                         <li><a href="programmation.html">Programmation</a></li>
                         <li><a href="#">Conférenciers</a></li>
                         <li><a href="#">Informations</a></li>
@@ -164,21 +160,21 @@
                 <div class="invites-sample">
                     <div class="invites-sample-content img-invite-hover">
                         <div><a href="invite.html"><img src="img/invite/invite_jeremy.jpg" alt="Invité Jeremy"
-                                             class="img-invite-hover"></a>
+                                                        class="img-invite-hover"></a>
                             <div class="invites-sample-content-titles">
                                 <div>Jérémy Lavoie</div>
                                 <div>Designer Graphique</div>
                             </div>
                         </div>
                         <div><a href="invite.html"><img src="img/invite/invite_robert.jpg" alt="Invité Robert"
-                                             class="img-invite-hover"></a>
+                                                        class="img-invite-hover"></a>
                             <div class="invites-sample-content-titles">
                                 <div>Robert Mercado</div>
                                 <div>Programmeur Back-End</div>
                             </div>
                         </div>
                         <div><a href="invite.html"><img src="img/invite/invite_bobby.jpg" alt="Invité Bobby"
-                                             class="img-invite-hover"></a>
+                                                        class="img-invite-hover"></a>
                             <div class="invites-sample-content-titles">
                                 <div>Bobby Franks</div>
                                 <div>Programmeur Full-Stack</div>
@@ -194,24 +190,26 @@
     <article class="lieu">
         <div class="specialBackground">
             <div class="wrapper">
-               <div class="lieu-content">
-                   <h3>Le lieu de rendez-vous</h3>
-                   <div>
-                       <div>
-                           <p>Le Palais des congrès de Montréal est un centre de convention situé dans le Quartier
-                               International de Montréal. Plusieurs hôtels entourent le centre et ce dernier est situé à 20
-                               kilomètres de l’Aéroport international Pierre-Elliott-Trudeau de Montréal, rendant ainsi le
-                               centre facilement accessible par voiture ou par transport en commun pour n’importe quel
-                               visiteur.</p>
-                           <h5>Adresse</h5>
-                           <p>Palais des congrès de Montréal, 1001 Jean Paul Riopelle Pl, Montréal, Canada</p>
-                       </div>
-                       <div>
-                           <img src="img/palais01.jpg" alt="Palais des congrès de Montréal">
-                           <img src="img/palais02.jpg" alt="Palais des congrès de Montréal">
-                       </div>
-                   </div>
-               </div>
+                <div class="lieu-content">
+                    <h3>Le lieu de rendez-vous</h3>
+                    <div>
+                        <div>
+                            <p>Le Palais des congrès de Montréal est un centre de convention situé dans le Quartier
+                                International de Montréal. Plusieurs hôtels entourent le centre et ce dernier est situé
+                                à 20
+                                kilomètres de l’Aéroport international Pierre-Elliott-Trudeau de Montréal, rendant ainsi
+                                le
+                                centre facilement accessible par voiture ou par transport en commun pour n’importe quel
+                                visiteur.</p>
+                            <h5>Adresse</h5>
+                            <p>Palais des congrès de Montréal, 1001 Jean Paul Riopelle Pl, Montréal, Canada</p>
+                        </div>
+                        <div>
+                            <img src="img/palais01.jpg" alt="Palais des congrès de Montréal">
+                            <img src="img/palais02.jpg" alt="Palais des congrès de Montréal">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </article>
@@ -309,6 +307,6 @@
     </div>
 </footer>
 
-
+<script src="js/script.js"></script>
 </body>
 </html>
