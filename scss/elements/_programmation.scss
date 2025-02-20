@@ -10,9 +10,9 @@
 }
 
 .programmation .programmation-dates {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
 
   text-align: center;
 
@@ -21,7 +21,6 @@
 
 .programmation .programmation-dates div {
   padding: 12px 48px;
-  margin: 0 48px;
 
   min-width: 28.9855%;
 
@@ -85,7 +84,11 @@
 
 }
 
-
+@media screen and (max-width: dimensions.$vw-middle-small) {
+  .programmation .programmation-dates {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 
 @media screen and (max-width: dimensions.$vw-middle) {
 

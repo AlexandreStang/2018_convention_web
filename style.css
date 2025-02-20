@@ -613,16 +613,15 @@ h4, h5, h6 {
 }
 
 .programmation .programmation-dates {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
   text-align: center;
   margin-bottom: 24px;
 }
 
 .programmation .programmation-dates div {
   padding: 12px 48px;
-  margin: 0 48px;
   min-width: 28.9855%;
   border-radius: 100px;
   cursor: pointer;
@@ -674,6 +673,11 @@ h4, h5, h6 {
   display: block;
 }
 
+@media screen and (max-width: 500px) {
+  .programmation .programmation-dates {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 @media screen and (max-width: 768px) {
   .page {
     margin-top: 40px;
@@ -714,7 +718,7 @@ h4, h5, h6 {
 .invites .invites-liste {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 48px 16px;
+  gap: 48px 32px;
 }
 
 .invites .invites-liste > div {

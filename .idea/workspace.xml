@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0e839792-c8d2-4cc5-8923-99a4d46c04a6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/elements/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/elements/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/elements/_invites.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/elements/_invites.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/elements/_programmation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/elements/_programmation.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
     </list>
