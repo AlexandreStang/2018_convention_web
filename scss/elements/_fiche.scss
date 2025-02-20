@@ -1,3 +1,9 @@
+@use "../settings/colors";
+@use "../settings/dimensions";
+@use "../settings/fonts";
+@use "../settings/global";
+@use "../tools/fonctions";
+
 .fiche .fiche-content {
   display: flex;
   justify-content: space-between;
@@ -19,8 +25,8 @@
 
 .fiche .fiche-content .fiche-texte .fiche-titre {
   text-transform: uppercase;
-  font-weight: $fw-bold;
-  font-size: rem(24);
+  font-weight: fonts.$fw-bold;
+  font-size: fonctions.rem(24);
 
   margin-bottom: 8px;
 
@@ -36,7 +42,7 @@
 }
 
 .fiche .fiche-content .fiche-texte .fiche-event div:first-child {
-  font-weight: $fw-bold;
+  font-weight: fonts.$fw-bold;
 }
 
 .fiche-invites-liste-content {
@@ -58,8 +64,8 @@
 }
 
 .titre-social a, .img-social a {
-  font-size: rem(36);
-  color: $green;
+  font-size: fonctions.rem(36);
+  color: colors.$green;
 
   margin-left: 18px;
 }
@@ -67,7 +73,7 @@
 .titre-social a:hover, .img-social a:hover {
   opacity: 0.4;
 
-  transition: $global-transition;
+  transition: global.$global-transition;
 }
 
 .img-social {
@@ -83,7 +89,7 @@
 
 
 
-@media screen and (max-width: $vw-middle) {
+@media screen and (max-width: dimensions.$vw-middle) {
   .titre-social div:last-of-type {
     display: none;
   }
@@ -111,7 +117,7 @@
 
 }
 
-@media screen and (max-width: $vw-middle-small) {
+@media screen and (max-width: dimensions.$vw-middle-small) {
 
   .fiche .fiche-content {
     flex-wrap: wrap;
@@ -135,7 +141,7 @@
 
 }
 
-@media screen and (max-width: $vw-small) {
+@media screen and (max-width: dimensions.$vw-small) {
 
 
 

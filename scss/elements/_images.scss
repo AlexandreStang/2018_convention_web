@@ -1,3 +1,5 @@
+@use "../settings/global";
+
 img {
   max-width: 100%;
 }
@@ -5,7 +7,7 @@ img {
 img[class="img-invite"], img[class="img-invite-hover"] {
   border-radius: 100%;
 
-  transition: $global-transition;
+  transition: global.$global-transition;
 
   -webkit-box-shadow: 0px 8px 24px -2px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 8px 24px -2px rgba(0, 0, 0, 0.25);
@@ -17,7 +19,7 @@ img[class="img-invite-hover"]:hover {
 
   opacity: 0.4;
 
-  transition: $global-transition;
+  transition: global.$global-transition;
 }
 
 .img-invite-hover img:hover {
@@ -25,13 +27,13 @@ img[class="img-invite-hover"]:hover {
 
   opacity: 0.4;
 
-  transition: $global-transition;
+  transition: global.$global-transition;
 }
 
 .img-invite img, .img-invite-hover img {
   border-radius: 100%;
 
-  transition: $global-transition;
+  transition: global.$global-transition;
 
   -webkit-box-shadow: 0px 8px 24px -2px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 8px 24px -2px rgba(0, 0, 0, 0.25);

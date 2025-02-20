@@ -1,9 +1,11 @@
+@use "../tools/fonctions";
+
 //////FICHIER DE CONFIGURATION POUR LES VARIABLES DE POLICE
 //
 //
 ///// Texte
-$font-size-text: rem(16);
-$font-line-height: rem(24);
+$font-size-text: fonctions.rem(16);
+$font-line-height: fonctions.rem(24);
 //
 ///// Font family
 //

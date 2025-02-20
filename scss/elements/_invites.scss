@@ -1,3 +1,5 @@
+@use "../settings/dimensions";
+
 .invites .invites-liste {
   display: flex;
   flex-wrap: wrap;
@@ -33,7 +35,7 @@
 }
 
 
-@media screen and (max-width: $vw-middle) {
+@media screen and (max-width: dimensions.$vw-middle) {
 
   .invites .invites-liste > div {
     width: 46.6666%;
@@ -44,7 +46,7 @@
 
 }
 
-@media screen and (max-width: $vw-middle-small) {
+@media screen and (max-width: dimensions.$vw-middle-small) {
 
     .invites .invites-liste > div {
       width: 100%;
@@ -56,7 +58,7 @@
 
 }
 
-@media screen and (max-width: $vw-small) {
+@media screen and (max-width: dimensions.$vw-small) {
 
   .invites .invites-liste > div {
     margin-bottom: 48px;

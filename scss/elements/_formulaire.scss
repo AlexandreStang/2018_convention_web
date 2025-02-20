@@ -1,6 +1,9 @@
+@use "../settings/colors";
+@use "../settings/fonts";
+
 form input {
-  color: $dark-grey;
-  font-family: $text;
+  color: colors.$dark-grey;
+  font-family: fonts.$text;
 
   border: 0;
   border-radius: 100px;
@@ -9,7 +12,7 @@ form input {
 }
 
 form input::placeholder {
-  color: $dark-grey;
+  color: colors.$dark-grey;
   opacity: 0.4;
   font-style: italic;
 }

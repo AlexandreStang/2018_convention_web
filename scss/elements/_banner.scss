@@ -1,5 +1,10 @@
+@use "../settings/colors";
+@use "../settings/dimensions";
+@use "../settings/fonts";
+@use "../tools/fonctions";
+
 .banner {
-  color: $white;
+  color: colors.$white;
 
   height: calc(100vh - 90px);
   position:relative;
@@ -22,7 +27,7 @@
 }
 
 .banner h1, .banner h2, .banner h3, .banner h4, .banner h5, .banner h6 {
-  color: $white;
+  color: colors.$white;
 }
 
 .banner h1, .banner h5 {
@@ -64,14 +69,14 @@
 }
 
 .banner .banner-chrono > div > div:first-child {
-  font-size: rem(96);
-  font-family: $title;
-  font-weight: $black;
-  color: $yellow;
+  font-size: fonctions.rem(96);
+  font-family: fonts.$title;
+  font-weight: colors.$black;
+  color: colors.$yellow;
 }
 
 .banner .banner-chrono > div > div:last-child {
-  font-size: rem(20);
+  font-size: fonctions.rem(20);
 }
 
 
@@ -92,7 +97,7 @@
 //  max-width: 150px;
 //}
 
-@media screen and (max-width: $vw-middle) {
+@media screen and (max-width: dimensions.$vw-middle) {
 
   .banner {
     text-align: center;
@@ -108,7 +113,7 @@
 
 }
 
-@media screen and (max-width: $vw-middle-small) {
+@media screen and (max-width: dimensions.$vw-middle-small) {
 
 .banner .banner-content {
   // display: block;
@@ -130,7 +135,7 @@
 }
 
 
-@media screen and (max-width: $vw-small) {
+@media screen and (max-width: dimensions.$vw-small) {
 
 
 }

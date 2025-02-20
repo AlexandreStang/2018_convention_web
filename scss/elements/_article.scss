@@ -1,9 +1,12 @@
+@use "../settings/colors";
+@use "../settings/dimensions";
+
 article, .banner {
   margin-bottom: 100px;
 }
 
 article:last-of-type {
-  background-color: $light-grey;
+  background-color: colors.$light-grey;
 
   padding: 100px 0;
   margin-bottom: 0;
@@ -20,23 +23,23 @@ article:last-of-type {
 div[class="specialBackground"] {
   padding: 100px 0;
 
-  color: $white;
+  color: colors.$white;
 }
 
 div[class="specialBackground"] h1, div[class="specialBackground"] h2, div[class="specialBackground"] h3, div[class="specialBackground"] h4, div[class="specialBackground"] h5, div[class="specialBackground"] h6 {
-  color: $white;
+  color: colors.$white;
 }
 
 div[class="specialBackground"] h3:after {
   width: 170px;
   height: 3px;
-  background-color: $yellow;
+  background-color: colors.$yellow;
   content: "";
   display: block;
   margin: 32px 0;
 }
 
-@media screen and (max-width: $vw-middle) {
+@media screen and (max-width: dimensions.$vw-middle) {
 
   article, .banner {
     margin-bottom: 40px;

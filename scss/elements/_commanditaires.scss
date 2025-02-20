@@ -1,3 +1,5 @@
+@use "../settings/dimensions";
+
 .commanditaires {
   display: flex;
   justify-content: space-between;
@@ -9,7 +11,7 @@
 }
 
 
-@media screen and (max-width: $vw-middle-small) {
+@media screen and (max-width: dimensions.$vw-middle-small) {
 
   .commanditaires {
     justify-content: center;

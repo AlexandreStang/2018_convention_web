@@ -1,7 +1,9 @@
+@use "../settings/dimensions";
+
 .wrapper {
   margin: auto;
-  padding: 0 $page-padding-side;
-  width: $max-width;
+  padding: 0 dimensions.$page-padding-side;
+  width: dimensions.$max-width;
   max-width: 100%;
 
   //section:last-of-type {
@@ -10,8 +12,10 @@
 
 }
 
-@media screen and (max-width: $vw-middle-small) {
+@media screen and (max-width: dimensions.$vw-middle-small) {
 
-  padding: 0 $tablette-padding-side;
+  .wrapper {
+    padding: 0 dimensions.$tablette-padding-side;
+  }
 
 }

@@ -1,43 +1,48 @@
+@use "../settings/colors";
+@use "../settings/dimensions";
+@use "../settings/fonts";
+@use "../tools/fonctions";
+
 h1 {
   //
-  font-size: rem(72);
+  font-size: fonctions.rem(72);
 }
 
 h2 {
   //
-  font-size: rem(60);
+  font-size: fonctions.rem(60);
 }
 
 h3 {
-  font-size: rem(48);
+  font-size: fonctions.rem(48);
 }
 
 h3:after {
   width: 170px;
   height: 3px;
-  background-color: $green;
+  background-color: colors.$green;
   content: "";
   display: block;
   margin: 32px 0;
 }
 
 h4 {
-  font-size: rem(30);
+  font-size: fonctions.rem(30);
 }
 h5 {
   //
-  font-size: rem(24);
+  font-size: fonctions.rem(24);
 }
 h6 {
-  font-size: rem(20);
+  font-size: fonctions.rem(20);
 }
 
 
 h1, h2, h3 {
   line-height: 1;
-  font-family: $title;
-  font-weight: $fw-black;
-  color: $dark-grey;
+  font-family: fonts.$title;
+  font-weight: fonts.$fw-black;
+  color: colors.$dark-grey;
   text-transform: uppercase;
 
   margin-top: 0;
@@ -45,34 +50,34 @@ h1, h2, h3 {
 
 h4, h5, h6 {
   line-height: 1;
-  font-family: $text;
-  font-weight: $fw-bold;
-  color: $dark-grey;
+  font-family: fonts.$text;
+  font-weight: fonts.$fw-bold;
+  color: colors.$dark-grey;
 
   margin-top: 0;
 }
 
 
-@media screen and (max-width: $vw-middle) {
+@media screen and (max-width: dimensions.$vw-middle) {
 
   h1 {
     //
-    font-size: rem(48);
+    font-size: fonctions.rem(48);
   }
 
   h2 {
     //
-    font-size: rem(42);
+    font-size: fonctions.rem(42);
   }
 
   h3 {
-    font-size: rem(36);
+    font-size: fonctions.rem(36);
   }
 
   h3:after {
     width: 170px;
     height: 3px;
-    background-color: $green;
+    background-color: colors.$green;
     content: "";
     display: block;
     margin: 24px 0;
@@ -80,43 +85,43 @@ h4, h5, h6 {
 
 
   h4 {
-    font-size: rem(24);
+    font-size: fonctions.rem(24);
   }
   h5 {
     //
-    font-size: rem(24);
+    font-size: fonctions.rem(24);
   }
   h6 {
-    font-size: rem(24);
+    font-size: fonctions.rem(24);
   }
 
 }
 
-@media screen and (max-width: $vw-small) {
+@media screen and (max-width: dimensions.$vw-small) {
 
   h1 {
     //
-    font-size: rem(24);
+    font-size: fonctions.rem(24);
   }
 
   h2 {
     //
-    font-size: rem(27);
+    font-size: fonctions.rem(27);
   }
 
   h3 {
-    font-size: rem(30);
+    font-size: fonctions.rem(30);
   }
 
   h4 {
-    font-size: rem(24);
+    font-size: fonctions.rem(24);
   }
   h5 {
     //
-    font-size: rem(16);
+    font-size: fonctions.rem(16);
   }
   h6 {
-    font-size: rem(20);
+    font-size: fonctions.rem(20);
   }
 
 }

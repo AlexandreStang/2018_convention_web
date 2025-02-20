@@ -1,3 +1,7 @@
+@use "../settings/dimensions";
+@use "../settings/fonts";
+@use "../tools/fonctions";
+
 
 .pourquoi-content {
   display: flex;
@@ -120,8 +124,8 @@
 .invites-sample-content-titles > div:first-child {
   margin-top: 24px;
 
-  font-weight: $fw-bold;
-  font-size: rem(20);
+  font-weight: fonts.$fw-bold;
+  font-size: fonctions.rem(20);
   margin-bottom: 4px;
 }
 
@@ -205,7 +209,7 @@
   z-index: 3;
 }
 
-@media screen and (max-width: $vw-middle) {
+@media screen and (max-width: dimensions.$vw-middle) {
 
   // POURQUOI
 
@@ -292,7 +296,7 @@
 }
 
 
-@media screen and (max-width: $vw-middle-small) {
+@media screen and (max-width: dimensions.$vw-middle-small) {
 
   .bref-icons {
     flex-direction: column;

@@ -1,3 +1,8 @@
+@use "../settings/colors";
+@use "../settings/dimensions";
+@use "../settings/fonts";
+@use "../settings/global";
+
 // DATES
 
 .page {
@@ -24,16 +29,16 @@
 
   cursor: pointer;
 
-  transition: $global-transition;
+  transition: global.$global-transition;
 }
 
 .programmation .programmation-dates div[class="jourChoisi"] {
-  background-color: $grey;
+  background-color: colors.$grey;
 }
 
 .programmation .programmation-dates .jourTitre {
-  font-family: $title;
-  font-weight: $fw-black;
+  font-family: fonts.$title;
+  font-weight: fonts.$fw-black;
   text-transform: uppercase;
 }
 
@@ -49,7 +54,7 @@
   align-items: center;
 
   padding: 24px 0;
-  border-bottom: 1px solid $grey;
+  border-bottom: 1px solid colors.$grey;
 }
 
 .programmation .programmation-infos span + div {
@@ -57,17 +62,17 @@
 }
 
 .programmation .programmation-infos .programmation-invite {
-  font-weight: $fw-bold;
+  font-weight: fonts.$fw-bold;
 }
 
 .programmation .programmation-infos table {
 
   width: 100%;
   border-collapse: collapse;
-  border-bottom: 1px solid $grey;
+  border-bottom: 1px solid colors.$grey;
 
   tr {
-    border-bottom: 1px solid $grey;
+    border-bottom: 1px solid colors.$grey;
   }
 
   td {
@@ -82,7 +87,7 @@
 
 
 
-@media screen and (max-width: $vw-middle) {
+@media screen and (max-width: dimensions.$vw-middle) {
 
   .page {
     margin-top: 40px;
@@ -120,7 +125,7 @@
 
 }
 
-@media screen and (max-width: $vw-middle-small) {
+@media screen and (max-width: dimensions.$vw-middle-small) {
 
   .page {
     margin-top: 20px;
@@ -128,7 +133,7 @@
 
 }
 
-@media screen and (max-width: $vw-small) {
+@media screen and (max-width: dimensions.$vw-small) {
 
   .page {
     margin-top: 40px;

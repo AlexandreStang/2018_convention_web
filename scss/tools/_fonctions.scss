@@ -1,5 +1,7 @@
+@use "sass:math";
+
 @function rem($fs){
-  @return ($fs / 16) + rem;
+  @return math.div($fs, 16) + rem;
 }
 
 @mixin font($family, $size: 'inherit') {

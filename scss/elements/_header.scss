@@ -1,16 +1,22 @@
+@use "../settings/colors";
+@use "../settings/dimensions";
+@use "../settings/fonts";
+@use "../settings/global";
+@use "../tools/fonctions";
+
 
 header {
   height: 90px;
   padding: 20px 0;
 
-  background-color: $white;
+  background-color: colors.$white;
 }
 
 .nav-mobile {
   display: none;
 
   z-index: 9999;
-  color: $white;
+  color: colors.$white;
 
   padding: 20px 0;
 
@@ -49,18 +55,18 @@ header .menu ul > li, .nav-mobile > div > nav > div > ul > li {
 }
 
 header .menu a {
-  color: $dark-grey;
-  font-family: $title;
+  color: colors.$dark-grey;
+  font-family: fonts.$title;
   text-transform: uppercase;
 }
 header .menu a:hover {
-  color: $green;
+  color: colors.$green;
 }
 
 
 .nav-mobile .menu a:hover {
-  color: $dark-grey;
-  font-family: $title;
+  color: colors.$dark-grey;
+  font-family: fonts.$title;
   text-transform: uppercase;
 }
 
@@ -69,13 +75,13 @@ header .menu a:hover {
   display: none;
   cursor: pointer;
 
-  transition: $global-transition;
+  transition: global.$global-transition;
 }
 
 .show-menu:hover {
-  color: $green;
+  color: colors.$green;
 
-  transition: $global-transition;
+  transition: global.$global-transition;
 }
 
 .toggle-menu {
@@ -90,9 +96,9 @@ input[id="show-menu"]:checked ~ ul {
 
 
 .nav-mobile .show-menu:hover {
-  color: $yellow;
+  color: colors.$yellow;
 
-  transition: $global-transition;
+  transition: global.$global-transition;
 }
 
 .nav-mobile .menu-mobile ul {
@@ -102,9 +108,9 @@ input[id="show-menu"]:checked ~ ul {
 
   text-align: center;
 
-  font-size: rem(36);
-  color: $white;
-  font-family: $title;
+  font-size: fonctions.rem(36);
+  color: colors.$white;
+  font-family: fonts.$title;
   text-transform: uppercase;
 
   padding: 0;
@@ -117,19 +123,19 @@ input[id="show-menu"]:checked ~ ul {
 }
 
 .nav-mobile .menu-mobile a {
-  color: $white;
+  color: colors.$white;
 
-  transition: $global-transition;
+  transition: global.$global-transition;
 }
 
 .nav-mobile .menu-mobile a:hover {
-  color: $yellow;
+  color: colors.$yellow;
 
-  transition: $global-transition;
+  transition: global.$global-transition;
 }
 
 
-@media screen and (max-width: $vw-middle) {
+@media screen and (max-width: dimensions.$vw-middle) {
 
   header .menu ul {
     display: none;
@@ -143,14 +149,14 @@ input[id="show-menu"]:checked ~ ul {
 
   .show-menu {
     display: block;
-    font-size: rem(24);
+    font-size: fonctions.rem(24);
 
     margin-left: 64px;
   }
 
 }
 
-@media screen and (max-width: $vw-middle-small) {
+@media screen and (max-width: dimensions.$vw-middle-small) {
 
 .btn-billet {
   display: none;
@@ -158,7 +164,7 @@ input[id="show-menu"]:checked ~ ul {
 
 }
 
-@media screen and (max-width: $vw-small) {
+@media screen and (max-width: dimensions.$vw-small) {
 
 
 
