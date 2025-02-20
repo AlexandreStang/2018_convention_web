@@ -4,17 +4,15 @@
 @use "../tools/fonctions";
 
 .ticket-section {
-  display: flex;
-  flex-wrap: wrap;
-
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px 32px;
 }
 
 // TOUS LES TICKETS
 
 .ticket {
-  min-width: 370px;
+
   min-height: 480px;
   border-radius: 32px;
 
@@ -90,7 +88,7 @@
 // TICKET SPÉCIAL UNIQUEMENT
 
 .ticket-special {
-  width: 400px;
+
   height: 560px;
 
   color: colors.$white;
@@ -120,6 +118,14 @@
   opacity: 1;
 }
 
+@media screen and (max-width: dimensions.$vw-middle-large) {
+
+  .ticket-section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+}
+
 @media screen and (max-width: dimensions.$vw-middle) {
 
   .ticket-special {
@@ -140,6 +146,7 @@
   }
 
 }
+
 
 
 

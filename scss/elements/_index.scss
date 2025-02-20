@@ -108,17 +108,12 @@
 }
 
 .apprendre .invites-sample-content {
-  display: flex;
-  justify-content: space-between;
-
-  margin-bottom: 32px;
-}
-
-.apprendre .invites-sample-content > div {
-  width: 30.6569%;
-
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px 16px;
 
   text-align: center;
+  margin-bottom: 32px;
 }
 
 .invites-sample-content-titles > div:first-child {
@@ -309,16 +304,12 @@
   }
 
   .apprendre .invites-sample-content {
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .apprendre .invites-sample-content > div {
-    width: 100%;
-
-    text-align: center;
-
-    margin-bottom: 40px;
+    width: 75%;
+    margin: auto;
   }
-
 
 }

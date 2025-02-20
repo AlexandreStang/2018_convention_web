@@ -6,13 +6,13 @@
 
 .fiche .fiche-content {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  align-items: start;
 }
 
 .fiche .fiche-content .fiche-img {
   max-width: 415px;
   max-height: 415px;
+  width: 40%;
 }
 
 .fiche .fiche-content .fiche-texte {
@@ -46,14 +46,14 @@
 }
 
 .fiche-invites-liste-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(8, 1fr);
 }
 
 .fiche-invites-liste-content div {
-  width: 140px;
-  height: 140px;
+  //width: 140px;
+  //height: 140px;
 
   margin: 20px 0;
 }
@@ -87,7 +87,11 @@
   display: none;
 }
 
-
+@media screen and (max-width: dimensions.$vw-middle-large) {
+  .fiche-invites-liste-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 
 @media screen and (max-width: dimensions.$vw-middle) {
   .titre-social div:last-of-type {
@@ -111,10 +115,6 @@
     margin: 0 9px;
   }
 
-  .fiche-invites-liste-content div {
-    max-width: 150px;
-  }
-
 }
 
 @media screen and (max-width: dimensions.$vw-middle-small) {
@@ -135,8 +135,8 @@
     width: 100%;
   }
 
-  .fiche-invites-liste-content div {
-    width: 44.8275%;
+  .fiche-invites-liste-content {
+    grid-template-columns: repeat(2, 1fr);
   }
 
 }

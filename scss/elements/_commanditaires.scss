@@ -1,9 +1,9 @@
 @use "../settings/dimensions";
 
 .commanditaires {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
 }
 
 .commanditaires img {
@@ -15,6 +15,7 @@
 
   .commanditaires {
     justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
 
     img {
       margin-bottom: 25px;

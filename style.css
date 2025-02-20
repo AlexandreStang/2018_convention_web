@@ -721,15 +721,12 @@ h4, h5, h6 {
   }
 }
 .invites .invites-liste {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 48px 16px;
 }
 
 .invites .invites-liste > div {
-  width: 22.5%;
-  max-width: 270px;
-  margin-bottom: 32px;
   position: relative;
 }
 
@@ -750,17 +747,17 @@ h4, h5, h6 {
 }
 
 @media screen and (max-width: 768px) {
-  .invites .invites-liste > div {
-    width: 46.6666%;
-    max-width: 335px;
-    margin-bottom: 10%;
+  .invites .invites-liste {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (max-width: 500px) {
+  .invites .invites-liste {
+    grid-template-columns: repeat(1, 1fr);
+  }
   .invites .invites-liste > div {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+    width: 75%;
+    margin: auto;
   }
 }
 @media screen and (max-width: 320px) {
@@ -770,13 +767,13 @@ h4, h5, h6 {
 }
 .fiche .fiche-content {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  align-items: start;
 }
 
 .fiche .fiche-content .fiche-img {
   max-width: 415px;
   max-height: 415px;
+  width: 40%;
 }
 
 .fiche .fiche-content .fiche-texte {
@@ -807,14 +804,12 @@ h4, h5, h6 {
 }
 
 .fiche-invites-liste-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(8, 1fr);
 }
 
 .fiche-invites-liste-content div {
-  width: 140px;
-  height: 140px;
   margin: 20px 0;
 }
 
@@ -844,6 +839,11 @@ h4, h5, h6 {
   display: none;
 }
 
+@media screen and (max-width: 960px) {
+  .fiche-invites-liste-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 @media screen and (max-width: 768px) {
   .titre-social div:last-of-type {
     display: none;
@@ -861,9 +861,6 @@ h4, h5, h6 {
   .img-social a {
     margin: 0 9px;
   }
-  .fiche-invites-liste-content div {
-    max-width: 150px;
-  }
 }
 @media screen and (max-width: 500px) {
   .fiche .fiche-content {
@@ -879,19 +876,17 @@ h4, h5, h6 {
     margin-left: 0;
     width: 100%;
   }
-  .fiche-invites-liste-content div {
-    width: 44.8275%;
+  .fiche-invites-liste-content {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .ticket-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px 32px;
 }
 
 .ticket {
-  min-width: 370px;
   min-height: 480px;
   border-radius: 32px;
   text-align: center;
@@ -953,7 +948,6 @@ h4, h5, h6 {
 }
 
 .ticket-special {
-  width: 400px;
   height: 560px;
   color: #fff;
   background: #00b7e0; /* Old browsers */
@@ -980,6 +974,11 @@ h4, h5, h6 {
   opacity: 1;
 }
 
+@media screen and (max-width: 960px) {
+  .ticket-section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 @media screen and (max-width: 768px) {
   .ticket-special {
     margin: 20px 0;
@@ -995,9 +994,9 @@ h4, h5, h6 {
   }
 }
 .commanditaires {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
 }
 
 .commanditaires img {
@@ -1007,6 +1006,7 @@ h4, h5, h6 {
 @media screen and (max-width: 500px) {
   .commanditaires {
     justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
   }
   .commanditaires img {
     margin-bottom: 25px;
@@ -1583,14 +1583,11 @@ form button {
 }
 
 .apprendre .invites-sample-content {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 32px;
-}
-
-.apprendre .invites-sample-content > div {
-  width: 30.6569%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px 16px;
   text-align: center;
+  margin-bottom: 32px;
 }
 
 .invites-sample-content-titles > div:first-child {
@@ -1730,12 +1727,11 @@ form button {
     padding-bottom: 40px;
   }
   .apprendre .invites-sample-content {
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
   }
   .apprendre .invites-sample-content > div {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 40px;
+    width: 75%;
+    margin: auto;
   }
 }
 @font-face {
