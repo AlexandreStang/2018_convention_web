@@ -1193,6 +1193,7 @@ header .menu a:hover {
 .nav-mobile .menu-mobile ul {
   display: flex;
   flex-direction: column;
+  gap: 48px;
   list-style: none;
   text-align: center;
   font-size: 2.25rem;
@@ -1200,10 +1201,6 @@ header .menu a:hover {
   font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   padding: 0;
-}
-
-.nav-mobile .menu-mobile li {
-  margin: 5% 0;
 }
 
 .nav-mobile .menu-mobile a {

@@ -109,6 +109,8 @@ input[id="show-menu"]:checked ~ ul {
 .nav-mobile .menu-mobile ul {
   display: flex;
   flex-direction: column;
+  gap: 48px;
+
   list-style: none;
 
   text-align: center;
@@ -121,10 +123,6 @@ input[id="show-menu"]:checked ~ ul {
   padding: 0;
 
 
-}
-
-.nav-mobile .menu-mobile li {
-  margin: 5% 0;
 }
 
 .nav-mobile .menu-mobile a {
