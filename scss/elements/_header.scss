@@ -31,7 +31,7 @@ header {
   background: linear-gradient(45deg, #00b7e0 23%, #40e0d0 96%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00b7e0', endColorstr='#40e0d0', GradientType=1); /* IE6-9 fallback on horizontal gradient */
 
-  height: 100vh;
+  height: 100%;
 }
 
 header > div > nav > div > a > .logo, .nav-mobile .logo {
