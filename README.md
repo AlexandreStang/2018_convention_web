@@ -7,7 +7,7 @@
 
 ## 🚀 Live Demo
 
-The original Wordpress website is sadly no longer available online. [Click here to see a static, mockup version of the site!](https://alexandrestang.github.io/2018_convention_web/)
+The original Wordpress website is sadly no longer available online. [Click here to see a static mockup of the site!](https://alexandrestang.github.io/2018_convention_web/)
 
 ## ⚡ Technologies Used
 
