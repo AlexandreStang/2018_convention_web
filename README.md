@@ -1,18 +1,17 @@
 # Wordpress Event Website
 
-> A custom WordPress theme built with PHP, designed for an event website. The event is a convention focused on web design.
+> A custom WordPress theme built with PHP and designed for an event website focused on web development and design.
 
 
 ![Home page](/og-image.png)
 
 ## 🚀 Live Demo
 
-The original Wordpress website is sadly no longer available online. [Click here to see a static version of the site!](https://alexandrestang.github.io/2018_convention_web/)
+The original Wordpress website is sadly no longer available online. [Click here to see a static, mockup version of the site!](https://alexandrestang.github.io/2018_convention_web/)
 
 ## ⚡ Technologies Used
 
-- **Frontend:** Javascript, SCSS, HTML
-- **Backend:** PHP
+- **Frontend:** PHP, Javascript, SCSS, HTML
 - **CMS:** WordPress
 - **Design:** Adobe Photoshop, Adobe Illustrator
 
